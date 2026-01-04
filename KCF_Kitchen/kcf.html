@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-vzVx2yzF9U8LqJw3w7lY5UKtU2DQ9f6vF9t1kJ+Q7lYg9j1j2V7+8a3Xy5S6M8VZ9x7F9J8fJv1yL1WfZ5M8Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <style>
+  .brand-font {
+    font-family: 'Playfair Display', serif;
+  }
+
+.hero-black-section {
+  background-image: url('fluid.PNG'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;                  
+  display: flex;                 
+  align-items: center;           
+  justify-content: center;        
+  position: relative;             
+  padding: 2rem 1rem;
+}
+
+.hero-black-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 0;
+}
+
+.hero-black-section .text-center {
+  position: relative; 
+  z-index: 1;
+}
+
+.hero-text {
+  color: rgba(255, 255, 255, 0.8); 
+}
+
+.contact-section {
+  background-color: #f8f9fa; 
+}
+
+.contact-section .form-control {
+  border-radius: 0.5rem;
+}
+
+.contact-section button {
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+}
+footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #dc3545; 
+}
+
+footer i {
+  font-size: 1.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+
+</style> 
+
+    <title>KCF Kitchen</title>
+
+
+  </head>
+
+  <body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <!-- Logo + Brand -->
+      <a class="navbar-brand d-flex align-items-center fs-1 fw-bolder fst-italic text-danger text-uppercase brand-font" href="#">
+        <img src="logo.jpg" alt="logo" width="90" height="90" class="me-2">
+        KCF
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          
+          <li class="nav-item"><a class="nav-link fw-bold text-dark brand-font" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-dark brand-font" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-dark brand-font" href="#about-us">About Us</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-dark brand-font" href="#contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+   
+  <section id= "home" class="hero-black-section">
+  <div class="text-center">
+    <p class="hero-text fs-4 fw-semibold px-3">
+      Welcome to KCF Kitchen! The ony place that cares about your bad eating habits as much as you!
+    </p>
+    <a href="#menu" class="btn btn-danger btn-lg mt-3">View Menu</a>
+  </div>
+</section>
+
+
+<!--MENU-->
+<section id="menu" class="menu-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold brand-font">OUR MENU</h2>
+    
+    <div class="row g-4">
+
+      <!-- Menu Item 1 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="cheeseburger.jpg" class="card-img-top" alt="Burger">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Classic Burger</h5>
+            <p class="card-text">Juicy beef patty with fresh lettuce, tomato, and our special sauce.</p>
+            <p class="fw-bold text-danger">KSH.1700</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="pepperoni pizza.jpg" class="card-img-top" alt="Pizza">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Pepperoni Pizza</h5>
+            <p class="card-text">Classic Italian pizza with mozzarella, basil, and tomato sauce.</p>
+            <p class="fw-bold text-danger">KSH.1200</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="chicken nuggets.jpg" class="card-img-top" alt="Chicken Nuggets">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Chicken Nuggets</h5>
+            <p class="card-text">Tender, all-white meat chicken lightly breaded and fried to a perfect golden crisp..</p>
+            <p class="fw-bold text-danger">KSH1200</p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Menu Item 4 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="crispy_french_fries.jpg" class="card-img-top" alt="crispy_french_fries">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Crispy French Fries</h5>
+            <p class="card-text">Premium thin-cut potatoes double-fried for a signature crunch and finished with sea salt.</p>
+            <p class="fw-bold text-danger">KSH.1450</p>
+          </div>
+        </div>
+      </div>
+
+ <!-- Menu Item 5 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="fried chicken.jpg" class="card-img-top" alt="fried chicken">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Fried Chicken</h5>
+            <p class="card-text">Heritage-breed chicken marinated in buttermilk and tossed in our secret 11-spice flour blend.</p>
+            <p class="fw-bold text-danger">KSH1200</p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Menu Item 6 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="fries combo.jpg" class="card-img-top" alt="Fries Combo">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Fries Combo</h5>
+            <p class="card-text">A generous basket of our signature crispy fries paired with your choice of two artisanal dipping sauces.</p>
+            <p class="fw-bold text-danger">KSH.1600</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 7 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="Deluxe platter.jpg" class="card-img-top" alt="Deluxe Platter">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Deluxe Platter</h5>
+            <p class="card-text">Our signature prime-beef burger served with a mountain of fries and a refreshing ice-cold soda.</p>
+            <p class="fw-bold text-danger">KSH.8000</p>
+          </div>
+        </div>
+      </div>
+
+ <!-- Menu Item 8 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="hotdog.jpg" class="card-img-top" alt="Hotdog">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Hotdog</h5>
+            <p class="card-text">A premium all-beef frankfurter nestled in a toasted brioche bun with classic mustard and relish.</p>
+            <p class="fw-bold text-danger">KSH.1400</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 9 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="Sandwich.jpg" class="card-img-top" alt="Sandwhich">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Sandwhich</h5>
+            <p class="card-text">Thinly sliced deli meats and crisp greens layered between thick slices of toasted sourdough.</p>
+            <p class="fw-bold text-danger">KSH.1450</p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Menu Item 10-->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="Taco.jpg" class="card-img-top" alt="Taco">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Taco</h5>
+            <p class="card-text">Thinly sliced deli meats and crisp greens layered between thick slices of toasted sourdough.</p>
+            <p class="fw-bold text-danger">KSH.1870</p>
+          </div>
+        </div>
+      </div>
+
+ <!-- Menu Item 11 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="Salad bowl.jpg" class="card-img-top" alt="Salad Bowl">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Salad Bowl</h5>
+            <p class="card-text">A vibrant mix of seasonal garden greens, crunchy toppings, and our house-made vinaigrette.</p>
+            <p class="fw-bold text-danger">KSH.1300</p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Menu Item 12 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="milkshake.jpg" class="card-img-top" alt="Milkshake">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Milkshake</h5>
+            <p class="card-text">Extra-thick, hand-spun premium ice cream topped with a cloud of whipped cream.</p>
+            <p class="fw-bold text-danger">KSH.1250</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--ABOUT US SECTION-->
+<section id="about-us" class="about-us-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Image Column -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="kitchen.jpg" alt="About KCF Kitchen" class="img-fluid rounded shadow">
+      </div>
+      
+      <!-- Text Column -->
+      <div class="col-md-6">
+        <h2 class="fw-bold brand-font mb-3">About Us</h2>
+        <p class="fs-5">
+          Yasssss!!! We have finally expanded our menu and boy oh boy we aren't ready to apologize. We are here and millitary-armed to feed those little <br>
+          monsters you call eating habits. When we started, we listed our top customers on our vision board: <br>
+          <dt>Customer 1</dt>
+          <dd>The I-wanna-lose-weight-but-can't-just-seem-to-stop-eating-junk. We got you with you with our sizzling chicken nuggets. Seriously though <br>
+          you have to try them out. Who do you think they are going to make fat if not you! hehe, just kidding. Beware of obesity though.</dd>
+          <br>
+          <dt>Customer 2</dt>
+          <dd>
+            The "I'm-just-having-one-fry" Thief. We see you reaching across the table with those long fingers! Don't be a pickpocket; <br>
+            just order our massive Fries Combo. It’s enough to feed you and your greedy habits without anyone catching a case. Stop stealing from your friends <br>   
+            and start conquering your own mountain of salt and grease!
+          </dd>
+<br>
+          <dt>Customer 3</dt> 
+          <dd>
+            The "This-is-my-last-cheat-meal" Liar. Every Monday you say it’s over, but by Tuesday you’re back here staring at our Deluxe Platter like it’s your <br>
+            first love. Relax, we won't tell your gym instructor. Your secret is safe with us, as long as your mouth is full of our juicy burgers and ice-cold soda.
+            Why fight a losing battle? Just let the demons win!
+          </dd>
+          <br>
+          Apologies if you are not on the list. We will leave you so you find your tribe...
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Contact Us-->
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold brand-font mb-5">Contact Us You Fast-Food Villains!</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+
+        <form>
+          <!-- Name -->
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your full name" required>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          </div>
+
+          <!-- Message -->
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER-->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Copyright -->
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        &copy; 2026 KCF Kitchen. All rights reserved.
+      </div>
+      
+      <!-- Social Media Icons -->
+      <div class="col-md-6 text-center text-md-end">
+        <a href="#" class="text-white mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white mx-2">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white mx-2">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<a href="#home" class="back-to-top">
+  <i class="bi bi-arrow-up-circle-fill fs-2 text-danger"></i>
+</a>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+  </html>
